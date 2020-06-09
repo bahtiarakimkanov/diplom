@@ -30,7 +30,7 @@
     }
     .main__social-buttons{
         flex-direction: column;
-        margin-top: -16rem;
+        margin-top: 1rem;
     }
     .main__title{
         margin-top: 5rem;
