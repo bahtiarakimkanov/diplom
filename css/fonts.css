@@ -1,0 +1,53 @@
+@font-face{
+    font-family: fontawesome;
+    src: url(fonts/FontAwesome.otf);
+}
+
+@font-face{
+    font-family: greatvibes;
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
+@font-face{
+    font-family: helvetica__bold;
+    src: url(fonts/HelveticaBold.ttf);
+}
+@font-face{
+    font-family: helvetica_regular;
+    src: url(fonts/HelveticaRegular.ttf);
+}
+@font-face{
+    font-family: lora_italic;
+    src: url(fonts/Lora-Italic.ttf);
+}
+@font-face{
+    font-family: popins_semibold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face{
+    font-family: roboto_black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face{
+    font-family: roboto_bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: roboto_italic;
+    src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face{
+    font-family: roboto_light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: roboto_medium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: roboto_regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: helvetica_oblique;
+    src: url(fonts/HelveticaOblique.otf);
+}
