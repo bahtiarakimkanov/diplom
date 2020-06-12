@@ -100,12 +100,77 @@
                 </div>
             </div>
         </div>
-        <div id="root">
+        <div id="product__card-root">
                 
                 
         </div>
         <div class="product__scrol"></div>
     </div>
+
+    <feature class="feature">
+        <div class="feature__content">
+            <div class="feature__text">
+                <p class="feature__title">We are organic farmfood</p>
+                <p class="feature__title-mini">about nutrix farmfood</p>
+                <p class="feature__descript">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ipsa dicta dolore harum deleniti doloremque at tempore voluptas optio, doloribus, expedita, molestias eos! Excepturi porro modi omnis aut assumenda ullam nulla enim eos. Soluta, aliquid.</p>
+            </div>
+
+            <div class="feature__icon-links">
+                <div class="f__icon-flex-first">
+                    <ul class="feature__list">
+                        <li class="list__item"><img src="img/f__icon-2.png" alt=""></li>
+                        <li class="list__item"><p class="li__title">100% organic foods</p></li>
+                        <li class="list__item"><p class="li__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, libero.</p></li>
+                    </ul>
+                    <ul class="feature__list">
+                        <li class="list__item"><img src="img/f__icon-3.png" alt=""></li>
+                        <li class="list__item"><p class="li__title">100% organic foods</p></li>
+                        <li class="list__item"><p class="li__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, libero.</p></li>
+                    </ul>
+
+                </div>
+                <div class="f__icon-flex-second">
+                    <ul class="feature__list">
+                        <li class="list__item"><img src="img/f__icon-1.png" alt=""></li>
+                        <li class="list__item"><p class="li__title">100% organic foods</p></li>
+                        <li class="list__item"><p class="li__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, libero.</p></li>
+                    </ul>
+                    <ul class="feature__list">
+                        <li class="list__item"><img src="img/f__icon-4.png" alt=""></li>
+                        <li class="list__item"><p class="li__title">100% organic foods</p></li>
+                        <li class="list__item"><p class="li__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, libero.</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature__center-img">
+                <img src="img/f__center-img.png" alt="">
+            </div>
+        </div>
+    </feature>
+
+    <section class="offer">
+        <div class="offer__content">
+            <div class="offer__first" id="offer__products_root">
+                
+            </div>
+            <div class="offer__text left__5rem-margin">
+                <span class="offer__text_tagline">Fresh from our team</span>
+                <p class="offer__text_title">220+ fruits, vegetables & lot more</p>
+                <p class="offer__text_descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem impedit expedita officia nihil? Architecto, corrupti eaque! Quidem dolorem, necessitatibus itaque vel earum neque quis aliquid, quae odit culpa totam officia non, minus praesentium ipsam ducimus placeat doloribus et odio?</p>
+            </div>
+        </div>
+        <div class="offer__content">
+            <div class="offer__text right__3rem-margin">
+                <span class="offer__text_tagline">Fresh from our team</span>
+                <p class="offer__text_title">220+ fruits, vegetables & lot more</p>
+                <p class="offer__text_descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem impedit expedita officia nihil? Architecto, corrupti eaque! Quidem dolorem, necessitatibus itaque vel earum neque quis aliquid, quae odit culpa totam officia non, minus praesentium ipsam ducimus placeat doloribus et odio?</p>
+            </div>
+            <div class="offer__second" id="offer__products_root_second">
+                
+            </div>
+        </div>
+    </section>
 
 
 
@@ -117,7 +182,7 @@
     function Product(props){
         return(
                 <div className="product__card">
-                    <img className="product__card-img" src="img/Bitmap1.jpg" />
+                    <img className="product__card-img" src={props.imag} />
                     <div className="product__descript">
                         <span className="product__title">{props.title}</span>
                         <span className="product__title_bold"> {props.titlebold}</span>
@@ -130,18 +195,62 @@
 
     }
 
-    let root = document.getElementById('root')
+    function Offer(props){
+        return(
+               <div className="offer__product-card">
+                        <img src={props.img} alt="" className="offer__card-img" />
+                        <hr className="card__line" />
+                        <div className="offer__card-text">
+                            <span className="offer__card_title">Organic </span>
+                            <span className="offer__card_titlebold">{props.productType}</span>
+                            <p className="offer__card_quant">{props.quant} items</p>
+                        </div>
+                </div> 
+        )
+    };
+    function OfferSecond(props){
+        return(
+               <div className="offer__product-card">
+                        <img src={props.img} alt="" className="offer__card-img" />
+                        <hr className="card__line" />
+                        <div className="offer__card-text">
+                            <span className="offer__card_title">Organic </span>
+                            <span className="offer__card_titlebold">{props.productType}</span>
+                            <p className="offer__card_quant">{props.quant} items</p>
+                        </div>
+                </div> 
+        )
+    };
+
+    let root = document.getElementById('product__card-root')
+    let offerRoot = document.getElementById('offer__products_root')
+    let offerRootSecond = document.getElementById('offer__products_root_second')
     
     let card = (
         <div className="product__cards">
-        <Product title="First" titlebold="second" price="55" />
-        <Product title="Pomodor" titlebold="Badyrah" price="100" />
-        <Product title="orange" titlebold="Aplecin" price="105" />
-        <Product title="apple" titlebold="Iphone" price="484" />
+        <Product title="organic" titlebold="Tomato" price="55" imag="img/product_tomato.jpg" />
+        <Product title="organic" titlebold="Cabbage" price="100" imag="img/product_kapusta.jpg" />
+        <Product title="organic" titlebold="Onion" price="105" imag="img/product_look.jpg" />
+        <Product title="organic" titlebold="Pineapple" price="484" imag="img/product_pineapple.jpg" />
+        <Product title="organic" titlebold="Tomato" price="55" imag="img/product_tomato.jpg" />
+        <Product title="organic" titlebold="Cabbage" price="100" imag="img/product_kapusta.jpg" />
+        <Product title="organic" titlebold="Onion" price="105" imag="img/product_look.jpg" />
+        <Product title="organic" titlebold="Pineapple" price="484" imag="img/product_pineapple.jpg" />
         </div>
     );
 
+    let offerCard = (
+        <div className="offer__products">
+        <Offer img="img/card1.png" productType="Fruits" quant="52" />
+        <Offer img="img/card1.png" productType="Vegetables" quant="35" />
+        <Offer img="img/card1.png" productType="Breads" quant="75" />
+        </div>
+    )
+
     ReactDOM.render(card, root);
+    ReactDOM.render(offerCard, offerRoot);
+    ReactDOM.render(offerCard, offerRootSecond);
+
     </script>
 
 
