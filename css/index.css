@@ -355,4 +355,74 @@ main {
   font-size: 16px;
 }
 
+.nutrix {
+  font-family: roboto-regular;
+  margin-top: 4rem;
+}
+
+.nutrix__up_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nutrix__up-title {
+  border: 2px #e5e5e5 solid;
+  border-radius: 2rem;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+
+.nutrix__tagline {
+  font-family: roboto_medium;
+  color: #525252;
+  font-size: 12px;
+}
+
+.up__title {
+  font-size: 20px;
+  color: #525252;
+  font-family: roboto_light;
+}
+
+.up__title_bold {
+  font-family: roboto_black;
+  color: #525252;
+  font-size: 20px;
+}
+
+.nutrix__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nutrix__button {
+  height: 2rem;
+  background-color: #7fbc00;
+  border: 1px #7fbc00 solid;
+  border-radius: 1rem;
+  margin-right: 10px;
+  margin-top: 1rem;
+  max-width: 170px;
+}
+
+.nutrix__button_link {
+  width: 100%;
+  font-family: roboto_black;
+  font-size: 14px;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+
+.nutrix__link-span {
+  font-family: roboto_regular;
+  font-size: 14px;
+  color: white;
+}
+
+.nutrix__down {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=index.css.map */

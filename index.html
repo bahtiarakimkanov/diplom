@@ -172,7 +172,32 @@
         </div>
     </section>
 
+    <div class="nutrix">
+        <div class="nutrix__content">
+            <div class="nutrix__up">
+                <div class="nutrix__up_text">
+                    <p class="nutrix__tagline">F R E S H   &nbsp; F R O M  &nbsp; O U R  &nbsp; T E A M</p>
+                    <div class="nutrix__up-title">
+                        <span class="up__title">naturix</span>
+                        <span class="up__title_bold">organic goods</span>
+                    </div>
+                </div>
+                <div class="nutrix__buttons ">
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> goods</a></button>
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> vegetables</a></button>
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> fruits</a></button>
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> tea</a></button>
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> breads</a></button>
+                    <button class="nutrix__button"><a href="#" class="nutrix__button_link"><span class="nutrix__link-span">Organic</span> juices</a></button>
+                </div>
+            </div>
+            <div class="nutrix__down" id="nutrix__down">
+            </div>
+            <div class="nutrix__down_second" id="nutrix__down_second"></div>
+        </div>
+    </div>
 
+    
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -194,6 +219,7 @@
 
 
     }
+    
 
     function Offer(props){
         return(
@@ -225,6 +251,8 @@
     let root = document.getElementById('product__card-root')
     let offerRoot = document.getElementById('offer__products_root')
     let offerRootSecond = document.getElementById('offer__products_root_second')
+    let nutrixDownRoot = document.getElementById('nutrix__down')
+    let nutrixDownRootSecond = document.getElementById('nutrix__down_second')
     
     let card = (
         <div className="product__cards">
@@ -232,6 +260,14 @@
         <Product title="organic" titlebold="Cabbage" price="100" imag="img/product_kapusta.jpg" />
         <Product title="organic" titlebold="Onion" price="105" imag="img/product_look.jpg" />
         <Product title="organic" titlebold="Pineapple" price="484" imag="img/product_pineapple.jpg" />
+        <Product title="organic" titlebold="Tomato" price="55" imag="img/product_tomato.jpg" />
+        <Product title="organic" titlebold="Cabbage" price="100" imag="img/product_kapusta.jpg" />
+        <Product title="organic" titlebold="Onion" price="105" imag="img/product_look.jpg" />
+        <Product title="organic" titlebold="Pineapple" price="484" imag="img/product_pineapple.jpg" />
+        </div>
+    );
+    let nutrixCard = (
+        <div className="product__cards content__center">
         <Product title="organic" titlebold="Tomato" price="55" imag="img/product_tomato.jpg" />
         <Product title="organic" titlebold="Cabbage" price="100" imag="img/product_kapusta.jpg" />
         <Product title="organic" titlebold="Onion" price="105" imag="img/product_look.jpg" />
@@ -250,6 +286,8 @@
     ReactDOM.render(card, root);
     ReactDOM.render(offerCard, offerRoot);
     ReactDOM.render(offerCard, offerRootSecond);
+    ReactDOM.render(nutrixCard, nutrixDownRoot);
+    ReactDOM.render(nutrixCard, nutrixDownRootSecond);
 
     </script>
 
