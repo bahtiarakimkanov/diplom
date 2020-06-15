@@ -860,4 +860,108 @@ h6 {
   justify-content: center;
 }
 
+footer {
+  color: #525252;
+  background-color: #f9f8f4;
+}
+
+.footer__content {
+  padding-top: 4rem;
+}
+
+.gen__text_descript {
+  font-family: helvetica_regular;
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.gen__adress, .gen__email, .gen__site {
+  font-family: roboto_bold;
+  font-size: 15px;
+}
+
+.footer__general_line {
+  width: 30px;
+  height: 2px;
+  background-color: #7abf00;
+  border: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.general__info {
+  max-width: 340px;
+  margin-top: -1.5rem;
+}
+
+.center__block_links {
+  display: none;
+}
+
+.center__block_link {
+  margin-top: 0.5rem;
+  font-family: roboto_regular;
+  font-size: 15px;
+  color: #525252;
+}
+
+.font__1rem {
+  font-size: 1rem;
+}
+
+.center__block_title {
+  font-family: roboto_regular;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.center__block_title_bold {
+  font-family: roboto_black;
+  font-size: 18px;
+}
+
+.insta__img {
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.ml1rem {
+  margin-left: 1rem;
+}
+
+.center_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.naturix__info, .my__account, .instagram__img {
+  cursor: pointer;
+}
+
+.bottom__link, .rights__text {
+  font-family: roboto_medium;
+  font-size: 15px;
+  color: #999999;
+  margin-right: 1rem;
+}
+
+.bottom__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*# sourceMappingURL=index.css.map */
