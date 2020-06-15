@@ -3,6 +3,7 @@ htlm,body
     padding: 0
     width: 100%
     height: 100%
+    font-family: 'Roboto', sans-serif
 .header__content
     display: flex
     justify-content: space-between
@@ -17,7 +18,7 @@ li
 main
     height: 5rem
 .nav__list
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 1rem
     margin-bottom: 2.5rem
     display: flex
@@ -28,7 +29,16 @@ main
 .nav__list-item
     margin-top: 2rem
 .nav__link
+    color: #878787
+.nav__link:hover
     color: #333333
+.nav__link_line
+    border: 0
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background-color: transparent
+    margin-bottom: 0
 a
     text-decoration: none
 
@@ -60,25 +70,18 @@ main
     font-size: 3rem
     margin-bottom: 2.5rem
 .main__descript
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 1rem
     margin-bottom: 4.5rem
 .main__button
-    height: 2.6rem
-    width: 9.5rem  
     background-color: white
-    border: 0.2rem #5ec6ce solid
-    border-radius: 1.5rem
-    color: white
-    padding: 20px
-    text-align: center
-    text-decoration: none
-    display: inline-block
-    font-size: 16px
-    margin: 4px 2px
+    border: #60c6cd 5px solid
+    border-radius: 2rem
+    width: 160px
+    height: 50px
     cursor: pointer
-    vertical-align: middle
-    padding-bottom: 2rem
+.main__button:hover
+    box-shadow:  0px 1rem 10px #525252
 .main__button-link
     font-family: roboto_bold
     font-size: 1rem
@@ -109,16 +112,23 @@ main
 
 
 
+
+    
+    
+    
 .product__type
     display: flex
     flex-direction: column
     align-items: center
     position: relative
-
 .product__button
     width: 11.25rem
-
-
+    border: 1px #9f9e9c solid
+.product__link
+    color: white
+.product__link_bold
+    color: white
+    font-weight: 900
 .p__type-flex-left,.p__type-flex-right
     display: flex
     flex-direction: column
@@ -130,7 +140,6 @@ main
     width: 100%
     overflow: auto
     margin-top: 5rem
-    
 .product__card
     height: 100%
     position: relative
@@ -150,18 +159,22 @@ main
     font-size: 20px
     color: #535353
 .product__title
-    font-family: roboto_regular
+    font-weight: 400
 .product__title_bold
-    font-family: roboto_black
+    font-weight: 900
 .product__price
     font-family: helvetica_bold
     font-size: 14px
     color: #7fbb00
 
+
+    
+    
+    
 .feature,.feature__content
     height: 100%
     background-color: #F7F6F2
-    font-family: roboto_regular
+    font-weight: 400
 .feature__title
     font-weight: 900
     font-size: 40px
@@ -175,7 +188,6 @@ main
     font-size: 16px
     padding:  2rem 2rem 2rem 2rem 
     max-width: 800px
-
 .li__title
     font-weight: 900
     font-size: 18px
@@ -196,11 +208,16 @@ main
 
 
 
+
+    
+    
+
+    
 .offer__content
     display: flex
     flex-direction: column
 .offer__content
-    font-family: roboto_regular
+    font-weight: 400
     display: flex
 .offer__products
     overflow: auto
@@ -248,6 +265,16 @@ main
     font-family: helvetica_oblique
     font-size: 16px
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .nutrix
     font-family: roboto-regular
     margin-top: 4rem
@@ -260,15 +287,15 @@ main
     border-radius: 2rem
     padding: 0.4rem 2rem 0.4rem 2rem
 .nutrix__tagline
-    font-family: roboto_medium
+    font-weight: 500
     color: #525252
     font-size: 12px
 .up__title
     font-size: 20px
     color: #525252
-    font-family: roboto_light
+    font-weight: 300
 .up__title_bold
-    font-family: roboto_black
+    font-weight: 900
     color:  #525252
     font-size: 20px
 .nutrix__buttons
@@ -285,12 +312,12 @@ main
     max-width: 170px
 .nutrix__button_link
     width: 100%
-    font-family: roboto_black
+    font-weight: 900
     font-size: 14px
     color: white
     margin: 0 10px 0 10px
 .nutrix__link-span
-    font-family: roboto_regular
+    font-weight: 400
     font-size: 14px
     color: white
 .nutrix__down
@@ -298,6 +325,17 @@ main
     flex-direction: column
 
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .discount
     background-color: #f7f6f2
     color: #525252
@@ -310,18 +348,18 @@ main
 .dis__left_title
     margin-left: 2rem
 .dis__deal-title
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 12px
     text-align: right
     padding-right: 3.7rem
 .dis__off-title
-    font-family: roboto_light
+    font-weight: 300
     font-size: 40px
 .dis__center_img
     margin-right: 3rem
     margin-left: 3rem
 .percent__off
-    font-family: roboto_black
+    font-weight: 900
     font-size: 40px
 .dis__right_description
     font-family: helvetica_regular
@@ -346,6 +384,26 @@ main
     background-color: white
     border: 0
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .cont__title
     font-family: helvetica_bold
     font-size: 40px
@@ -398,16 +456,25 @@ h6
 
 
 
+
+    
+    
+    
+    
+    
+    
+    
+    
 .c__main_tagline
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 10px
     color: #a0a0a0
 .c__main_title
-    font-family: roboto_light
+    font-weight: 300
     font-size: 30px
     color: #525252
 .c__main_title_b
-    font-family: roboto_black
+    font-weight: 900
     font-size: 30px
     color: #525252
 .c__main_descript
@@ -470,24 +537,34 @@ h6
 
 
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .new__arriv_tagline
-    font-family: roboto_medium
+    font-weight: 500
     font-size:  10px
     color: #9f9f9f
 .new__arriv_title
-    font-family: roboto_light
+    font-weight: 300
     font-size: 28px
     color: #525252
 .new__arriv_title_bold
-    font-family: roboto_black
+    font-weight: 900
     font-size: 28px
     color: #525252
 .popular__card_title
-    font-family: roboto_regular
+    font-weight: 400
     font-size: 18px
     color: #525252
 .popular__card_title_bold
-    font-family: roboto_black
+    font-weight: 900
     font-size: 18px
     color: #525252
 .popular__card_price
@@ -516,7 +593,6 @@ h6
     margin-left: 0
 .popular__card_img
     padding-left: 1rem
-
 .new__arriv_text
     margin-top: 2rem
 .down__button_left
@@ -531,21 +607,36 @@ h6
 .popular__down_buttons
     display: none
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .subscribe
     height: 300px
     background-color: #f7f6f2
     color: #525252
 .sub__text_tagline
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 12px
 .sub__text_title
-    font-family: roboto_light
+    font-weight: 300
     font-size: 35px
 .sub__text_title_bold
-    font-family: roboto_black
+    font-weight: 900
     font-size: 35px
 .sub__sign_botton
-    font-family: roboto_regular
+    font-weight: 400
     font-size: 18px
     color: white
 .sub__sign_area_input
@@ -574,6 +665,24 @@ h6
 
 
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .feedback__cont
     max-width: 1000px
     border-radius: 1.5rem
@@ -600,6 +709,18 @@ h6
     display: flex
     justify-content: center
 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 footer
     color: #525252
     background-color: #f9f8f4
@@ -627,18 +748,17 @@ footer
     display: none
 .center__block_link
     margin-top: 0.5rem
-    font-family: roboto_regular
+    font-weight: 400
     font-size: 15px
     color: #525252
-
 .font__1rem
     font-size: 1rem
 .center__block_title
-    font-family: roboto_regular
+    font-weight: 400
     font-size: 18px
     margin-bottom: 1rem
 .center__block_title_bold
-    font-family: roboto_black
+    font-weight: 900
     font-size: 18px
 .insta__img
     margin: 0.5rem 0.5rem 0 0 
@@ -656,17 +776,27 @@ footer
     // width: 280px
 .naturix__info,.my__account,.instagram__img
     cursor: pointer
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 .bottom__link,.rights__text
-    font-family: roboto_medium
+    font-weight: 500
     font-size: 15px
     color: #999999
     margin-right: 1rem
 .bottom__links
     display: flex
     flex-direction: column
-
-
-
 .bottom
     min-height: 100px
     display: flex

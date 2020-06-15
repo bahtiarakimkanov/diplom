@@ -3,6 +3,7 @@ htlm, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .header__content {
@@ -31,7 +32,7 @@ main {
 }
 
 .nav__list {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 1rem;
   margin-bottom: 2.5rem;
   display: flex;
@@ -45,7 +46,20 @@ main {
 }
 
 .nav__link {
+  color: #878787;
+}
+
+.nav__link:hover {
   color: #333333;
+}
+
+.nav__link_line {
+  border: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-bottom: 0;
 }
 
 a {
@@ -93,27 +107,22 @@ main {
 }
 
 .main__descript {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 1rem;
   margin-bottom: 4.5rem;
 }
 
 .main__button {
-  height: 2.6rem;
-  width: 9.5rem;
   background-color: white;
-  border: 0.2rem #5ec6ce solid;
-  border-radius: 1.5rem;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  border: #60c6cd 5px solid;
+  border-radius: 2rem;
+  width: 160px;
+  height: 50px;
   cursor: pointer;
-  vertical-align: middle;
-  padding-bottom: 2rem;
+}
+
+.main__button:hover {
+  box-shadow: 0px 1rem 10px #525252;
 }
 
 .main__button-link {
@@ -165,6 +174,16 @@ main {
 
 .product__button {
   width: 11.25rem;
+  border: 1px #9f9e9c solid;
+}
+
+.product__link {
+  color: white;
+}
+
+.product__link_bold {
+  color: white;
+  font-weight: 900;
 }
 
 .p__type-flex-left, .p__type-flex-right {
@@ -211,11 +230,11 @@ main {
 }
 
 .product__title {
-  font-family: roboto_regular;
+  font-weight: 400;
 }
 
 .product__title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
 }
 
 .product__price {
@@ -227,7 +246,7 @@ main {
 .feature, .feature__content {
   height: 100%;
   background-color: #F7F6F2;
-  font-family: roboto_regular;
+  font-weight: 400;
 }
 
 .feature__title {
@@ -282,7 +301,7 @@ main {
 }
 
 .offer__content {
-  font-family: roboto_regular;
+  font-weight: 400;
   display: flex;
 }
 
@@ -373,7 +392,7 @@ main {
 }
 
 .nutrix__tagline {
-  font-family: roboto_medium;
+  font-weight: 500;
   color: #525252;
   font-size: 12px;
 }
@@ -381,11 +400,11 @@ main {
 .up__title {
   font-size: 20px;
   color: #525252;
-  font-family: roboto_light;
+  font-weight: 300;
 }
 
 .up__title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
   color: #525252;
   font-size: 20px;
 }
@@ -408,14 +427,14 @@ main {
 
 .nutrix__button_link {
   width: 100%;
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 14px;
   color: white;
   margin: 0 10px 0 10px;
 }
 
 .nutrix__link-span {
-  font-family: roboto_regular;
+  font-weight: 400;
   font-size: 14px;
   color: white;
 }
@@ -443,14 +462,14 @@ main {
 }
 
 .dis__deal-title {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 12px;
   text-align: right;
   padding-right: 3.7rem;
 }
 
 .dis__off-title {
-  font-family: roboto_light;
+  font-weight: 300;
   font-size: 40px;
 }
 
@@ -460,7 +479,7 @@ main {
 }
 
 .percent__off {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 40px;
 }
 
@@ -564,19 +583,19 @@ h6 {
 }
 
 .c__main_tagline {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 10px;
   color: #a0a0a0;
 }
 
 .c__main_title {
-  font-family: roboto_light;
+  font-weight: 300;
   font-size: 30px;
   color: #525252;
 }
 
 .c__main_title_b {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 30px;
   color: #525252;
 }
@@ -673,31 +692,31 @@ h6 {
 }
 
 .new__arriv_tagline {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 10px;
   color: #9f9f9f;
 }
 
 .new__arriv_title {
-  font-family: roboto_light;
+  font-weight: 300;
   font-size: 28px;
   color: #525252;
 }
 
 .new__arriv_title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 28px;
   color: #525252;
 }
 
 .popular__card_title {
-  font-family: roboto_regular;
+  font-weight: 400;
   font-size: 18px;
   color: #525252;
 }
 
 .popular__card_title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 18px;
   color: #525252;
 }
@@ -772,22 +791,22 @@ h6 {
 }
 
 .sub__text_tagline {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 12px;
 }
 
 .sub__text_title {
-  font-family: roboto_light;
+  font-weight: 300;
   font-size: 35px;
 }
 
 .sub__text_title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 35px;
 }
 
 .sub__sign_botton {
-  font-family: roboto_regular;
+  font-weight: 400;
   font-size: 18px;
   color: white;
 }
@@ -901,7 +920,7 @@ footer {
 
 .center__block_link {
   margin-top: 0.5rem;
-  font-family: roboto_regular;
+  font-weight: 400;
   font-size: 15px;
   color: #525252;
 }
@@ -911,13 +930,13 @@ footer {
 }
 
 .center__block_title {
-  font-family: roboto_regular;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 1rem;
 }
 
 .center__block_title_bold {
-  font-family: roboto_black;
+  font-weight: 900;
   font-size: 18px;
 }
 
@@ -946,7 +965,7 @@ footer {
 }
 
 .bottom__link, .rights__text {
-  font-family: roboto_medium;
+  font-weight: 500;
   font-size: 15px;
   color: #999999;
   margin-right: 1rem;
