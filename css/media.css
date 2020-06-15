@@ -252,3 +252,26 @@
     width: 600px;
 }
 }
+@media screen and (min-width: 900px){
+    .popular__list_products{
+    display: flex
+    }
+    .popular__card:hover{
+        border: #7fbb00 1px solid;
+        box-shadow:  0px 1rem 10px #ececec;
+    }
+    .popular__down_buttons{
+        display: flex;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width: 1150px){
+    .new__arrivals_list,.popular__organic_list,.random__list{
+        margin-right: 2rem;
+    }
+}
+
+
+
+
+
